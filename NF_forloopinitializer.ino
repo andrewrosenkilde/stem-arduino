@@ -1,7 +1,7 @@
 int thisPin;
 void setup() {
-    for(thisPin = //lowest pin of pin array */; thisPin <= //highest pin of pin array */; thisPin++) {
-        pinMode(thisPin, OUTPUT);
+    for(thisPin = lowest_pin_of_pin_array; thisPin <= highest_pin_of_pin_array; thisPin++) {
+        pinMode(thisPin, INPUT_OR_OUTPUT);
     }
 }
 
