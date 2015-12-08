@@ -13,7 +13,15 @@ void loop() {
             delay(100);
         }
         int averageForce = total/10;
-        Serial.println("The average force value is " + String(averageForce)) + ".";
+        Serial.println("Average raw force value: " + String(averageForce)) + ".";
+        int massInGrams = ((106)*averageForce)/(1023-averageForce);
+        Serial.println("Average mass in grams: " + String(massInGrams)) + ".";
+        int massInKilos = massInGrams / 1000;
+        Serial.println("Average mass in kilos: " + String(massInKilos)) + ".";
+        int weightInNewtons = massInGrams / 101;
+        Serial.println("Average weight in newtons: " + String(weightInNewtons)) + ".";
+        int weightInPounds = weightInNewtons / 4.4;
+        Serial.println("Average weight in pounds: " + String(weightInPounds)) + ".";
     }
     delay(200);
 }
