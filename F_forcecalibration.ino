@@ -14,7 +14,7 @@ void loop() {
         }
         float averageForce = total/10;
         Serial.println("Average raw force value: " + String(averageForce)) + ".";
-        float massInGrams = ((106)*averageForce)/(1023-averageForce);
+        float massInGrams = ((146)* averageForce)/(1023 - averageForce);
         Serial.println("Average mass in grams: " + String(massInGrams)) + ".";
         float massInKilos = massInGrams / 1000;
         Serial.println("Average mass in kilos: " + String(massInKilos)) + ".";
