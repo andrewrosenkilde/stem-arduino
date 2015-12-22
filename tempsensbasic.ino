@@ -1,4 +1,5 @@
 //TMP36 Pin Variables
+//Percent ERROR:  5%, Measured 19.3 degrees C, actual 20.5 degrees C
 int sensorPin = 0; //the analog pin the TMP36's Vout (sense) pin is connected to
                         //the resolution is 10 mV / degree centigrade with a
                         //500 mV offset to allow for negative temperatures
